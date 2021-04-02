@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+
+  <title>Crowdfunding product page | Frontend Mentor</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="app/scss/style.css">
+</head>
+
+<body class="">
+  
+  <header class="header">
+    <nav class="navbar container flex flex-aic flex-jcsb">
+      <img class="crowdfundlogo" src="images/logo.svg" alt="Crowdfund logo">
+      <img class="hamburger" onclick="togglemenu()" src="images/icon-hamburger.svg" alt="icon-hamburger">
+      <div class="overlay mobilemenu flex flex-jcc">
+          <div class="menu flex flex-fdc flex-jcc content_ainer border_r">
+            <a href="#"><div class="menu__items flex flex-aic">Discover</div></a>
+            <a href="#"><div class="menu__items flex flex-aic">About</div></a>
+            <a href="#"><div class="menu__items flex flex-aic">Get Started</div></a>
+          </div>
+      </div>
+      <div class="navlinks flex flex-jcsb flex-aic">
+        <a href="#">About</a><a href="#">Discover</a><a href="#">Get Started</a>
+      </div>
+    </nav>
+  </header>
+  <section class="content flex flex-jcsb flex-fdc">
+    <div class="box box1 border_r flex flex-fdc flex-aic box1">
+      <div class="content_ainer">
+        <div class="forlogo flex flex-jcc">
+          <img class="mastercraftlogo" src="images/logo-mastercraft.svg" alt="Mastercraft logo">
+        </div>
+        <h1>Master Bamboo Monitor Riser</h1>
+        <p class="tagline">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+        <div class="boxend flex flex-jcsb flex-aic">
+          <div onclick="togglesupportbox()" href="#" class="button backproject flex flex-aic flex-jcc">Back this project</div>
+          <div class="button bookmark flex flex-aic">
+            <div class="circle">
+              <img src="images/icon-bookmark.svg" alt="bookmark button">
+            </div>
+            <p>Bookmark</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box box2 border_r"></div>
+    <div class="box box3 border_r flex flex-fdc flex-aic box1">
+      <div class="content_ainer">
+        <h2>About this project</h2>
+        <p class="para">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+          to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+          your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+        </p>
+        <p class="para">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your
+          computer
+          to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+      </div>
+      <div class="content_ainer pricingbox border border_r">
+        <div class="pricehead flex flex-jcsb flex-aic">
+          <h3>Bamboo Stand</h3>
+          <span class="pledge">Pledge $25 or more</span>
+        </div>
+        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.</p>
+        <div class="boxend2 flex flex-jcsb flex-aic">
+          <p class="flex price_left  flex-aic"><span class="price">101&nbsp;</span>left</p>
+          <div class="button reward flex flex-aic flex-jcc">Select Reward</div>
+        </div>
+      </div>
+      <div class="content_ainer pricingbox border border_r">
+        <div class="pricehead flex flex-jcsb flex-aic">
+          <h3>Black Edition Stand</h3>
+          <span class="pledge">Pledge $75 or more</span>
+        </div>
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          member list. Shipping is included.</p>
+        <div class="boxend2 flex flex-jcsb flex-aic">
+          <p class="flex price_left  flex-aic"><span class="price">64&nbsp;</span>left</p>
+          <div class="button reward flex flex-aic flex-jcc">Select Reward</div>
+        </div>
+      </div>
+      <div class="content_ainer pricingbox border border_r disabled">
+        <div class="pricehead flex flex-jcsb flex-aic ">
+          <h3>Mahogany Special Edition</h3>
+          <span class="pledge">Pledge $200 or more</span>
+        </div>
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.</p>
+        <div class="boxend2 flex flex-jcsb flex-aic">
+          <p class="flex price_left flex-aic"><span class="price">0&nbsp;</span>left</p>
+          <div class="button reward flex flex-aic flex-jcc">Out of Stock</div>
+        </div>
+      </div>
+
+    </section>
+    <div class="overlay thanksforsupport flex flex-aic flex-jcc">
+      <div class="supportbox border_r flex flex-aic">
+        <img src="images/icon-check.svg" alt="tick icon">
+        <div class="flex content_ainer flex-fdc flex-aic">
+        <h3>Thanks for Your Support</h3>
+        <p class="tcent ">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+          an email once our campaign is completed.</p>
+        </div>
+        <div onclick="closesupportbox()" class="button gotit flex flex-aic flex-jcc">Got it!</div>
+      </div>
+      
+    </div>
+    <script src="/app/js/script.js"></script>
+</body>
+
+</html>
