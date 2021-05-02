@@ -31,7 +31,6 @@ a:visited
   text-decoration: none;
   color: white;
 }
-
 .container {
   max-width: 69.375rem;
   width: 87.2%;
@@ -65,7 +64,6 @@ a:visited
   &-jcsb {
     justify-content: space-between;
   }
-
   &-jcc {
     justify-content: center;
   }
@@ -84,7 +82,7 @@ a:visited
   }
 }
 p {
-  color: $darkGray;
+  color: #383838;
   font-size: 15px;
 }
 .tcent {
